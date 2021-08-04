@@ -1,0 +1,45 @@
+body {
+    background-image: url('./nachos.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 1.2em;
+    height: 1.2em;
+    margin-left: 10px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: space-around;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    align-self: center;
+}
