@@ -1,8 +1,18 @@
-body {
-    background-image: url('./images/nachos.jpg');
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    color: white;
+nav {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin: 0px 8px;
+}
+
+h1 {
+    font-size: 6em;
 }
 
 header {
@@ -11,6 +21,7 @@ header {
 
 #description {
     text-align: center;
+    font-size: 2em;
 }
 
 #button-container {
@@ -30,8 +41,6 @@ img:hover {
 
 footer {
     display: flex;
-    position: fixed;
-    background-color: black;
     background: rgba(0, 0, 0, 0.5);
     justify-content: space-around;
     left: 0;
