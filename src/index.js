@@ -7,7 +7,9 @@ loadHeader();
 loadHome();
 loadFooter();
 
-const home = document.getElementById('home')
+const home = document.getElementById('home');
+// Set home as active by default
+home.classList.add('active');
 home.addEventListener('click', () => {
     home.classList.add('active');
     menu.classList.remove('active');
