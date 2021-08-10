@@ -1,14 +1,24 @@
-nav {
-    text-align: center;
+.active {
+    color: orange;
 }
 
-ul {
-    list-style-type: none;
+nav {
+    text-align: center;
 }
 
 li {
     display: inline;
     margin: 0px 8px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+li a:hover {
+    background: rgba(0, 0, 0, 0.1);
 }
 
 h1 {
