@@ -1,6 +1,7 @@
 import './style.css';
 import loadHome from './home.js';
 import loadHeader from './header.js';
+import loadContactPage from './contact';
 import loadFooter from './footer.js';
 
 loadHeader();
@@ -28,4 +29,6 @@ contact.addEventListener('click', () => {
     contact.classList.add('active');
     menu.classList.remove('active');
     home.classList.remove('active');
+    // Display the contact page
+    loadContactPage();
 });

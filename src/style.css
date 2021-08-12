@@ -4,6 +4,7 @@
 
 nav {
     text-align: center;
+    margin-top: 20px;
 }
 
 li {
@@ -22,7 +23,8 @@ li a:hover {
 }
 
 h1 {
-    font-size: 6em;
+    margin-top: 40px;
+    font-size: 5em;
 }
 
 header {
@@ -49,9 +51,19 @@ img:hover {
     opacity: 0.5;
 }
 
+#card {
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 5px;
+    width: 25em;
+}
+
 footer {
+    position: absolute;
     display: flex;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
     justify-content: space-around;
     left: 0;
     right: 0;
