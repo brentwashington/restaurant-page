@@ -31,12 +31,17 @@ header {
     text-align: center;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 #description {
     text-align: center;
     font-size: 2em;
 }
 
-#button-container {
+#contact-container {
     display: flex;
     justify-content: center;
 }
@@ -59,18 +64,14 @@ img:hover {
     width: 25em;
 }
 
-footer {
-    position: absolute;
+#credits {
     display: flex;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     justify-content: space-around;
-    left: 0;
-    right: 0;
-    bottom: 0;
 }
 
-.footer-content {
+.credits-content {
     display: flex;
     align-self: center;
 }

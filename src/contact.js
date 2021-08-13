@@ -1,7 +1,10 @@
-const div = document.createElement('div');
-div.id = 'card';
+const contactContainer = document.createElement('div');
+contactContainer.id = 'contact-container';
 
 function loadContactPage() {
+    const div = document.createElement('div');
+    div.id = 'card';
+
     const contactTitles = [
         'Phone',
         'Email',
@@ -27,7 +30,18 @@ function loadContactPage() {
         div.appendChild(p);
     }
 
-    document.body.appendChild(div);
+    contactContainer.appendChild(div);
+    document.body.appendChild(contactContainer);
 }
 
-export default loadContactPage;
+// Removes the contact page content from the screen
+function removeContactPage() {
+    document.body.removeChild(contactContainer);
+    // Clear the div
+    contactContainer.innerHTML = null;
+}
+
+export {
+    loadContactPage,
+    removeContactPage
+}

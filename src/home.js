@@ -1,6 +1,7 @@
+const main = document.createElement('main');
+
 // Load the main content of the page
 function loadHome() {
-    const main = document.createElement('main');
     const div = document.createElement('div');
     div.id = 'description';
 
@@ -19,4 +20,11 @@ function loadHome() {
     document.body.appendChild(main);
 }
 
-export default loadHome;
+// Removes the home content from the screen
+function removeHome() {
+    document.body.removeChild(main);
+    // Clear the content container
+    main.innerHTML = null;
+}
+
+export { loadHome, removeHome }

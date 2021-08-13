@@ -1,10 +1,11 @@
 import GithubIcon from './images/github-logo.png';
 
-function loadFooter() {
-    const footer = document.createElement('footer');
+function loadCredits() {
+    const credits = document.createElement('div');
+    credits.id = 'credits';
 
     const div = document.createElement('div');
-    div.className = 'footer-content';
+    div.className = 'credits-content';
 
     const p = document.createElement('p');
 
@@ -19,16 +20,16 @@ function loadFooter() {
     const faviconCredit = document.createTextNode('Favicon made by turkkub from www.flaticon.com');
 
     const secondDiv = document.createElement('div');
-    secondDiv.className = 'footer-content';
+    secondDiv.className = 'credits-content';
 
     a.appendChild(img);
     p.append(myName, a);
     div.appendChild(p);
     secondDiv.appendChild(faviconCredit);
-    footer.appendChild(div);
-    footer.appendChild(secondDiv);
+    credits.appendChild(div);
+    credits.appendChild(secondDiv);
 
-    document.body.appendChild(footer);
+    document.body.appendChild(credits);
 }
 
-export default loadFooter;
+export default loadCredits;
