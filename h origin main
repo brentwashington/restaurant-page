@@ -1,0 +1,65 @@
+[33mcommit ed4e2f534fbd168cf224ff7a14ad307b1b0ff394[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Brent Washington <brentwashing@gmail.com>
+Date:   Thu Aug 12 20:18:59 2021 -0500
+
+    Add page navigation functionality
+
+[33mcommit 22d7865ada5ad54ae0d1c966e669da14aafa9dcb[m
+Author: Brent Washington <brentwashing@gmail.com>
+Date:   Wed Aug 11 23:09:24 2021 -0500
+
+    Create contact page UI
+
+[33mcommit 0f5e63d910c84d0067e96c5bfa57f451ce220111[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Brent Washington <brentwashing@gmail.com>
+Date:   Tue Aug 10 17:57:11 2021 -0500
+
+    Refactor navbar creation with JavaScript
+
+[33mcommit 3d719760194a12b9b733da4ebb79e6d2c429a638[m
+Author: Brent Washington <brentwashing@gmail.com>
+Date:   Tue Aug 10 00:57:45 2021 -0500
+
+    Create nav bar
+
+[33mcommit 154eda08765f99c16979735150afc34aff4dd3c5[m
+Author: Brent Washington <brentwashing@gmail.com>
+Date:   Sun Aug 8 21:36:59 2021 -0500
+
+    Add nav list and redo design
+
+[33mcommit 23c442b387a2f9dfbf8325ca388e42e66db29bbb[m[33m ([m[1;32mchore-module[m[33m)[m
+Author: Brent Washington <brentwashing@gmail.com>
+Date:   Wed Aug 4 20:53:35 2021 -0500
+
+    Refactor into modules
+
+[33mcommit b045f422acb4f16ecf51005f5006f8f037e11e86[m
+Author: Brent Washington <brentwashing@gmail.com>
+Date:   Wed Aug 4 03:33:34 2021 -0500
+
+    Create homepage
+
+[33mcommit 846bfa57edeb68df069811352ec4f82c9fd61c27[m
+Author: Brent Washington <brentwashing@gmail.com>
+Date:   Fri Jul 30 21:20:34 2021 -0500
+
+    Set up with webpack
+
+[33mcommit 0c53198bca3b867a60de539a3feb842478e7ce87[m
+Author: Brent Washington <brentwashing@gmail.com>
+Date:   Fri Jul 30 20:13:20 2021 -0500
+
+    Update README.md
+
+[33mcommit 069fa1a76165361b85acb215686dc115247c45e3[m
+Author: Brent Washington <brentwashing@gmail.com>
+Date:   Fri Jul 30 20:13:09 2021 -0500
+
+    Update README.md
+
+[33mcommit c4721ab6ef17d1b590958ab7da88d6e10e6e91bd[m
+Author: Brent Washington <vincentdeimos@gmail.com>
+Date:   Fri Jul 30 20:12:49 2021 -0500
+
+    Initial commit
