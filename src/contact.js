@@ -2,8 +2,12 @@ const contactContainer = document.createElement('div');
 contactContainer.id = 'contact-container';
 
 function loadContactPage() {
+    if (contactContainer.classList.contains('inactive')) {
+        contactContainer.classList.remove('inactive');
+    }
+
     const div = document.createElement('div');
-    div.id = 'card';
+    div.id = 'contact-card';
 
     const contactTitles = [
         'Phone',
@@ -34,14 +38,13 @@ function loadContactPage() {
     document.body.appendChild(contactContainer);
 }
 
-// Removes the contact page content from the screen
-function removeContactPage() {
-    document.body.removeChild(contactContainer);
-    // Clear the div
+// Hides and resets content
+function hideContact() {
+    contactContainer.classList.toggle('inactive');
     contactContainer.innerHTML = null;
 }
 
 export {
     loadContactPage,
-    removeContactPage
+    hideContact
 }

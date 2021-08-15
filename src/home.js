@@ -2,10 +2,14 @@ const main = document.createElement('main');
 
 // Load the main content of the page
 function loadHome() {
+    if (main.classList.contains('inactive')) {
+        main.classList.remove('inactive');
+    }
+
     const div = document.createElement('div');
     div.id = 'description';
 
-    const descriptions = ['Tastiest nachos around', 'Family-Owned', 'Monday - Saturday: 9AM - 10PM', 'Sunday: 10AM - 8PM'];
+    const descriptions = ['Tastiest food around', 'Family-Owned', 'Monday - Saturday: 9AM - 10PM', 'Sunday: 10AM - 8PM'];
 
     // Create the text elements with their respective descriptions
     for (let i = 0; i < descriptions.length; i++) {
@@ -25,14 +29,13 @@ function loadHome() {
     document.body.appendChild(main);
 }
 
-// Removes the home content from the screen
-function removeHome() {
-    document.body.removeChild(main);
-    // Clear the content container
+// Hides and resets content
+function hideHome() {
+    main.classList.toggle('inactive');
     main.innerHTML = null;
 }
 
 export {
     loadHome,
-    removeHome
+    hideHome
 }
