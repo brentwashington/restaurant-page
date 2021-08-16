@@ -1,11 +1,6 @@
 const contactContainer = document.createElement('div');
-contactContainer.id = 'contact-container';
 
 function loadContactPage() {
-    if (contactContainer.classList.contains('inactive')) {
-        contactContainer.classList.remove('inactive');
-    }
-
     const div = document.createElement('div');
     div.id = 'contact-card';
 
@@ -38,13 +33,18 @@ function loadContactPage() {
     document.body.appendChild(contactContainer);
 }
 
-// Hides and resets content
+function displayContact() {
+    contactContainer.classList.remove('inactive');
+    contactContainer.classList.add('contact-container');
+}
+
 function hideContact() {
-    contactContainer.classList.toggle('inactive');
-    contactContainer.innerHTML = null;
+    contactContainer.classList.remove('contact-container');
+    contactContainer.classList.add('inactive');
 }
 
 export {
     loadContactPage,
+    displayContact,
     hideContact
 }

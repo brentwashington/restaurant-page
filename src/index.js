@@ -1,14 +1,17 @@
 import './style.css';
 import {
+    displayHome,
     hideHome,
     loadHome,
 } from './home.js';
 import loadHeader from './header.js';
 import {
+    displayContact,
     hideContact,
     loadContactPage,
 } from './contact';
 import {
+    displayMenu,
     hideMenu,
     loadMenu,
 } from './menu';
@@ -18,6 +21,11 @@ import loadCredits from './credits.js';
 loadCredits();
 loadHeader();
 loadHome();
+// Load and hide the other pages
+loadMenu();
+loadContactPage();
+hideMenu();
+hideContact();
 
 const home = document.getElementById('home');
 // Set home as active by default
@@ -30,7 +38,7 @@ home.addEventListener('click', () => {
     hideMenu();
     hideContact();
     // Display the home page 
-    loadHome();
+    displayHome();
 });
 
 const menu = document.getElementById('menu');
@@ -41,7 +49,8 @@ menu.addEventListener('click', () => {
     // Hide the other pages
     hideHome();
     hideContact();
-    loadMenu();
+    // Display the menu
+    displayMenu();
 });
 
 const contact = document.getElementById('contact');
@@ -53,5 +62,5 @@ contact.addEventListener('click', () => {
     hideHome();
     hideMenu();
     // Display the contact page
-    loadContactPage();
+    displayContact();
 });

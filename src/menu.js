@@ -1,11 +1,6 @@
 const grid = document.createElement('div');
-grid.id = 'card-grid';
 
 function loadMenu() {
-    if (grid.classList.contains('inactive')) {
-        grid.classList.remove('inactive');
-    }
-
     const menu = [
         'Supreme Nachos',
         'Spicy Beef Nachos',
@@ -36,13 +31,18 @@ function loadMenu() {
     document.body.appendChild(grid);
 }
 
-// Hides and resets content
+function displayMenu() {
+    grid.classList.remove('inactive');
+    grid.classList.add('card-grid');
+}
+
 function hideMenu() {
+    grid.classList.remove('card-grid');
     grid.classList.add('inactive');
-    grid.innerHTML = null;
 }
 
 export {
     loadMenu,
+    displayMenu,
     hideMenu
 }

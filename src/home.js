@@ -2,10 +2,6 @@ const main = document.createElement('main');
 
 // Load the main content of the page
 function loadHome() {
-    if (main.classList.contains('inactive')) {
-        main.classList.remove('inactive');
-    }
-
     const div = document.createElement('div');
     div.id = 'description';
 
@@ -29,13 +25,16 @@ function loadHome() {
     document.body.appendChild(main);
 }
 
-// Hides and resets content
+function displayHome() {
+    main.classList.remove('inactive');
+}
+
 function hideHome() {
-    main.classList.toggle('inactive');
-    main.innerHTML = null;
+    main.classList.add('inactive');
 }
 
 export {
     loadHome,
+    displayHome,
     hideHome
 }
