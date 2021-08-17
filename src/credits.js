@@ -13,6 +13,7 @@ function loadCredits() {
     a.setAttribute('href', 'https://github.com/BrentWashington');
 
     const img = document.createElement('img');
+    img.id = 'github-logo';
     img.src = GithubIcon;
     img.alt = 'Github Logo';
 

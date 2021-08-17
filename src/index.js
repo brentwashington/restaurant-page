@@ -31,30 +31,25 @@ const home = document.getElementById('home');
 // Set home as active by default
 home.classList.add('active');
 home.addEventListener('click', () => {
-    home.classList.add('active');
-    menu.classList.remove('active');
-    contact.classList.remove('active');
-    // Hide the other pages
-    hideMenu();
-    hideContact();
-    // Display the home page 
-    displayHome();
+    showHomePage();
+});
+
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    showMenuPage();
 });
 
 const menu = document.getElementById('menu');
 menu.addEventListener('click', () => {
-    menu.classList.add('active');
-    home.classList.remove('active');
-    contact.classList.remove('active');
-    // Hide the other pages
-    hideHome();
-    hideContact();
-    // Display the menu
-    displayMenu();
+    showMenuPage();
 });
 
 const contact = document.getElementById('contact');
 contact.addEventListener('click', () => {
+    showContactPage();
+});
+
+function showContactPage() {
     contact.classList.add('active');
     menu.classList.remove('active');
     home.classList.remove('active');
@@ -63,4 +58,26 @@ contact.addEventListener('click', () => {
     hideMenu();
     // Display the contact page
     displayContact();
-});
+}
+
+function showMenuPage() {
+    menu.classList.add('active');
+    home.classList.remove('active');
+    contact.classList.remove('active');
+    // Hide the other pages
+    hideHome();
+    hideContact();
+    // Display the menu
+    displayMenu();
+}
+
+function showHomePage() {
+    home.classList.add('active');
+    menu.classList.remove('active');
+    contact.classList.remove('active');
+    // Hide the other pages
+    hideMenu();
+    hideContact();
+    // Display the home page 
+    displayHome();
+}

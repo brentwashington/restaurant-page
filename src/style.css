@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .active {
     color: orange;
+    background: rgba(0, 0, 0, 0.3)
 }
 
 .inactive {
     display: none;
+}
+
+body {
+    background-image: url('https://cdn.winsightmedia.com/platform/files/public/2018-04/background/twin-peaks-nachos_1524861420.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
 }
 
 nav {
@@ -18,16 +29,17 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
     padding: 8px;
+    color: white;
 }
 
 li a:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     margin-top: 40px;
+    font-family: 'Pacifico', cursive;
     font-size: 5em;
 }
 
@@ -38,6 +50,21 @@ header {
 main {
     display: flex;
     justify-content: center;
+    padding-bottom: 15px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: gold;
+    color: white;
+    border: goldenrod;
+    border-radius: 25px;
+    padding: 25px 100px;
+    font-size: 75%;
+}
+
+button:hover {
+    background: rgba(255, 230, 0, 0.5);
 }
 
 #description {
@@ -50,19 +77,20 @@ main {
     justify-content: center;
 }
 
-img {
+#github-logo {
     width: 1.2em;
     height: 1.2em;
     margin-left: 5px;
 }
 
-img:hover {
+#github-logo:hover {
     opacity: 0.5;
 }
 
 #contact-card {
     text-align: center;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
     border-radius: 5px;
     width: 25em;
@@ -70,8 +98,6 @@ img:hover {
 
 #credits {
     display: flex;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
     justify-content: space-around;
 }
 
@@ -86,9 +112,17 @@ img:hover {
     grid-template-rows: auto;
     justify-content: center;
     gap: 3rem;
+    margin-bottom: 25px;
 }
 
 .card {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 2em;
+    text-align: center;
+}
+
+.dish-image {
+    width: 100%;
+    height: 70%;
 }
